@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+
+    <meta charset="UTF-8">
+    
+    <!-- GIÚP HIỂN THỊ ĐẸP TRÊN IPHONE / MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tính điểm học phần FaMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="logo-container">
+    <img src="https://dongphucgiadinh.com/wp-content/uploads/2022/09/logo-dai-hoc-bach-khoa.png" class="logo">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.k0LpQAUPjP6eQ_dKvKipTwHaHa?pid=Api&P=0&h=220" class="logo">
+</div>
+
+<div class="container">
+
+    <h2>Tính điểm học phần FaMI</h2>
+
+    <div class="form">
+<label>Điểm chuyên cần (-2, -1, 0, 1)</label>
+<input id="cc" type="number" list="list_cc" placeholder="Nhập hoặc chọn">
+
+<datalist id="list_cc">
+    <option value="-2">
+    <option value="-1">
+    <option value="0">
+    <option value="1">
+</datalist>
+
+
+        <label>Điểm tích cực (0, 0.5, 1)</label>
+<input id="cc" type="number" list="list_cc" placeholder="Nhập hoặc chọn">
+
+<datalist id="list_cc">
+    <option value="0">
+    <option value="0,5">
+    <option value="1">
+</datalist>
+
+   <label>Số bài Đánh giá liên tục (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)</label>
+<input id="cc" type="number" list="list_cc" placeholder="Nhập hoặc chọn">
+
+<datalist id="list_cc">
+    <option value="0">
+    <option value="1">
+    <option value="2">
+    <option value="3">
+	 <option value="4">
+    <option value="5">
+    <option value="6">
+    <option value="7">
+	 <option value="8">
+    <option value="9">
+	<option value="10">
+</datalist>
+
+<label>Điểm giữa kỳ (0, 2, 4, ..., 30)</label>
+        <input id="gk" type="number" step="2">
+
+        <label>Điểm cuối kỳ (0.0 - 10.0, chỉ .0 hoặc .5)</label>
+        <input id="ck" type="number" step="0.5">
+
+
+        <button onclick="tinhDiem()">Tính điểm</button>
+    </div>
+
+    <div id="kq">
+        <p>Điểm quá trình: <span id="qt">—</span></p>
+        <p>Điểm cuối kỳ: <span id="ck_out">—</span></p>
+        <p>Điểm học phần: <span id="hp">—</span></p>
+        <p>Điểm chữ: <span id="dc">—</span></p>
+        <p>Điểm hệ 4: <span id="h4">—</span></p>
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
